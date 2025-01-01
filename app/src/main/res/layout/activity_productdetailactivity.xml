@@ -27,7 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="loading_details"
+        android:text="loading +details"
         app:layout_constraintEnd_toEndOf="@+id/productimage"
         app:layout_constraintStart_toStartOf="@+id/productimage"
         app:layout_constraintTop_toBottomOf="@+id/productimage"

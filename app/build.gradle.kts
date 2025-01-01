@@ -9,6 +9,7 @@ android {
     defaultConfig {
         applicationId = "com.example.e_commerce"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -26,8 +27,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 }
 
@@ -40,4 +41,24 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    /* For Rounded Image View */
+    implementation (libs.roundedimageview)
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
+    implementation(libs.materialsearchbar)
+
+    /* For Slider - Start */
+    // Material Components for Android. Replace the version with the latest version of Material Components library.
+    implementation(libs.material)
+    // Circle Indicator (To fix the xml preview "Missing classes" error)
+    implementation(libs.circleindicator)
+    implementation(libs.whynotimagecarousel)
+    /* For Slider - End */
+
+    implementation(libs.volley)
+
+    implementation(libs.tinycart)
+    implementation(libs.android.advancedwebview)
+
 }
